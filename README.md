@@ -39,3 +39,9 @@ Once the Docker container is running, it will automatically start the iPerf3 ser
 ```bash
 iperf3 -c <your_server_ip> -p 443
 ```
+
+## Server Start
+```bash
+docker build -t speedtest-server .
+docker run -d -p 443:443 speedtest-server --expose 443
+```

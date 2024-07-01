@@ -10,11 +10,10 @@ COPY entrypoint.sh /entrypoint.sh
 # Making entrypoint.sh an executable
 RUN chmod +x /entrypoint.sh
 
-# Verify permissions
 RUN ls -l /entrypoint.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT [/entrypoint.sh]
+ENTRYPOINT ["/entrypoint.sh"]
 
 # docker build -t speedserver .
 # docker run -d -p 443:443 speedserver

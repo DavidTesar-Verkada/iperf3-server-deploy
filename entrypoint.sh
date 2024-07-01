@@ -5,6 +5,6 @@ apt update && apt install -y iperf3
 
 echo "==========Starting service=========="
 
-## TODO: Add public IP display
+echo "Public IP address is: $(curl -s ifconfig.me)"
 
 iperf3 -s -p 443

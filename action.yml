@@ -1,0 +1,7 @@
+# action.yml
+name: 'Speedtest Server Setup'
+description: 'Greet someone and record the time'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
